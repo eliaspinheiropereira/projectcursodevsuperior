@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: curso
+
+  datasource:
+    url: jdbc:h2:mem:projectcursodevsuperior
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
